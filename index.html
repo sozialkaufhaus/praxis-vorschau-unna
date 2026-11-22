@@ -1,0 +1,2085 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. med. dent. Martin Braatz – Zahnarzt &amp; Fachzahnarzt für Oralchirurgie in Unna</title>
+    <meta
+      name="description"
+      content="Zahnarztpraxis &amp; Oralchirurgische Fachzahnarztpraxis Dr. med. dent. Martin Braatz in Unna (Ostring 37). Zahnheilkunde, Oralchirurgie, Implantologie &amp; Parodontologie in freundlicher, ruhiger Atmosphäre."
+    />
+    <meta name="theme-color" content="#1E4640" />
+    <!-- Vorschau-Schutz: Verhindert, dass Google die Entwurfs-Webseite vor der Freigabe durch Dr. Braatz indexiert -->
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Local SEO Structured Data (Dentist / Oral Surgery + FAQPage) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Dentist",
+            "@id": "https://www.dr-braatz.de/#praxis",
+            "name": "Oralchirurgische Fachzahnarztpraxis Dr. med. dent. Martin Braatz",
+            "alternateName": "Zahnarzt & Fachzahnarzt für Oralchirurgie Dr. Martin Braatz Unna",
+            "description": "Zahnarzt und Fachzahnarzt für Oralchirurgie in Unna (Ostring 37). Persönliche Praxis mit kleinem, vertrautem Team, kurzen Wartezeiten, Implantologie, Parodontologie und einfühlsamer Behandlung für Angstpatienten.",
+            "url": "https://www.dr-braatz.de",
+            "telephone": "+49-2303-967575",
+            "faxNumber": "+49-2303-9477680",
+            "email": "praxis@dr-braatz.de",
+            "isAcceptingNewPatients": true,
+            "medicalSpecialty": ["Dentistry", "OralSurgery"],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Ostring 37",
+              "addressLocality": "Unna",
+              "postalCode": "59423",
+              "addressRegion": "NRW",
+              "addressCountry": "DE"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 51.5347,
+              "longitude": 7.6889
+            },
+            "openingHoursSpecification": [
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "08:00", "closes": "13:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "14:00", "closes": "17:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "08:00", "closes": "13:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "14:00", "closes": "18:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "08:00", "closes": "13:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:00", "closes": "13:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "14:00", "closes": "18:00" },
+              { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "13:00" }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Wo kann ich in der Nähe der Praxis Dr. Braatz in Unna parken?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Direkt gegenüber unserer Praxis am Ostring 37 in 59423 Unna befindet sich die Tiefgarage am Bahnhof Unna. Auch mit Bus und Bahn ist die Praxis bequem erreichbar."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Nehmen Sie neue Patientinnen und Patienten (Kasse & Privat) auf?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ja, unsere Praxis in Unna nimmt neue Patientinnen und Patienten auf – sowohl gesetzlich Versicherte (GKV) als auch Privatversicherte (PKV). Terminvereinbarung telefonisch unter 02303 / 96 75 75."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Brauche ich eine Überweisung für einen Termin?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nein, Sie können für alle zahnärztlichen und oralchirurgischen Leistungen direkt einen Termin vereinbaren. Falls Ihr Hauszahnarzt Sie für einen chirurgischen Eingriff überweist, bringen Sie Überweisung und Röntgenbilder gerne mit."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="sr-only" href="#main-content">Direkt zum Inhalt springen</a>
+
+    <!-- Dynamisches Praxis-Banner (Urlaub / Vertretung / Zahnärztlicher Notdienst) -->
+    <div class="praxis-notice-banner" id="praxis-notice-banner" hidden role="region" aria-label="Aktuelle Praxismeldung und Notdienst">
+      <div class="container praxis-notice-banner__inner">
+        <div class="praxis-notice-banner__content">
+          <span class="praxis-notice-banner__badge" id="notice-banner-badge">Aktueller Hinweis</span>
+          <div class="praxis-notice-banner__text">
+            <strong id="notice-banner-title">Praxis-Information:</strong>
+            <span id="notice-banner-msg"></span>
+            <span id="notice-banner-sub" class="praxis-notice-banner__sub"></span>
+          </div>
+        </div>
+        <div class="praxis-notice-banner__actions">
+          <a
+            href="tel:+491805986700"
+            class="praxis-notice-banner__btn"
+            id="notice-emergency-call"
+            title="Zentraler Zahnärztlicher Notdienst Westfalen-Lippe"
+          >
+            Notdienst: 01805 / 98 67 00
+          </a>
+          <a
+            href="https://www.zahnaerzte-wl.de/notdienstsuche?q=Unna"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="praxis-notice-banner__link"
+            id="notice-emergency-link"
+          >
+            Heutigen Notdienst für Unna anzeigen ↗
+          </a>
+          <button type="button" class="praxis-notice-banner__close" id="notice-banner-dismiss" aria-label="Hinweis ausblenden">
+            ✕
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Info & Live Opening Hours Strip -->
+    <div class="top-bar">
+      <div class="container top-bar__inner">
+        <div class="top-bar__group">
+          <span class="status-pill" data-open-status>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-open-status-text>Sprechzeiten werden geladen …</span>
+          </span>
+          <span class="top-bar__item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Ostring 37 · 59423 Unna (ggü. Bahnhof-Tiefgarage)
+          </span>
+        </div>
+        <div class="top-bar__group">
+          <span class="top-bar__item">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <a href="tel:+492303967575"><strong>0 23 03 / 96 75 75</strong></a>
+          </span>
+            <div class="top-bar__extras">
+              <div class="weather-pill" id="weather-unna-pill" title="Wetter in Unna (Praxisstandort)">
+                <span class="weather-pill__icon" id="weather-icon" aria-hidden="true">⛅</span>
+                <span id="weather-text">Unna · Wetter laden</span>
+                <button
+                  type="button"
+                  class="weather-pill__refresh"
+                  id="weather-load-btn"
+                  aria-label="Aktuelles Live-Wetter für Unna abrufen"
+                  title="Live-Wetter für Unna abrufen (Open-Meteo)"
+                >
+                  Live
+                </button>
+              </div>
+
+              <div class="a11y-toolbar" role="toolbar" aria-label="Barrierefreiheit und Sprache">
+                <button
+                  type="button"
+                  class="a11y-btn"
+                  id="btn-easy-lang"
+                  aria-pressed="false"
+                  title="Einfache Sprache ein- oder ausschalten"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                  </svg>
+                  <span data-i18n-toolbar="easy">Einfache Sprache</span>
+                </button>
+                <button
+                  type="button"
+                  class="a11y-btn"
+                  id="btn-contrast"
+                  aria-pressed="false"
+                  title="Hohen Kontrast ein- oder ausschalten"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 2a10 10 0 0 0 0 20z" fill="currentColor" />
+                  </svg>
+                  <span data-i18n-toolbar="contrast">Kontrast</span>
+                </button>
+                <div class="a11y-font-group" role="group" aria-label="Schriftgröße anpassen">
+                  <button
+                    type="button"
+                    class="a11y-btn"
+                    id="btn-font-dec"
+                    aria-pressed="false"
+                    title="Schrift kleiner machen / auf 100% zurücksetzen (A-)"
+                    aria-label="Schrift verkleinern"
+                  >
+                    <span>A-</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="a11y-btn"
+                    id="btn-font-reset"
+                    aria-pressed="true"
+                    title="Standard-Schriftgröße (100%)"
+                    aria-label="Standard-Schriftgröße 100%"
+                  >
+                    <span>100%</span>
+                  </button>
+                  <button
+                    type="button"
+                    class="a11y-btn"
+                    id="btn-font-size"
+                    aria-pressed="false"
+                    title="Schriftgröße vergrößern (A+)"
+                    aria-label="Schrift vergrößern"
+                  >
+                    <span id="font-size-label">A+</span>
+                  </button>
+                </div>
+                <button
+                  type="button"
+                  class="a11y-btn a11y-btn--lang"
+                  id="btn-lang-en"
+                  aria-pressed="false"
+                  title="Switch language between Deutsch and English"
+                >
+                  <span id="lang-label">EN</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Sticky Glassmorphic Navigation -->
+    <header class="site-header" id="site-header">
+      <div class="container header__inner">
+        <a href="#start" class="brand" aria-label="Zur Startseite Praxis Dr. Martin Braatz">
+          <img src="assets/favicon.svg" alt="" class="brand__logo" width="44" height="44" />
+          <span class="brand__text">
+            <span class="brand__name">Dr. med. dent. Martin Braatz</span>
+            <span class="brand__role">Zahnarzt &amp; Fachzahnarzt für Oralchirurgie · Unna</span>
+          </span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Hauptnavigation">
+          <div class="nav-mega-wrap">
+            <a href="#leistungen" class="nav-mega-trigger" aria-haspopup="true">
+              <span data-i18n-nav="0">Leistungen</span>
+              <span class="nav-mega-caret" aria-hidden="true"></span>
+            </a>
+            <div class="nav-mega" role="menu" aria-label="Unsere Leistungen">
+              <div class="nav-mega__grid">
+                <a href="#leistungen" data-jump-service="zahnheilkunde" class="nav-mega__item" role="menuitem">
+                  <strong>Allgemeine Zahnheilkunde</strong>
+                  <span>Prophylaxe, PZR, Füllungen &amp; Zahnersatz</span>
+                </a>
+                <a href="#leistungen" data-jump-service="oralchirurgie" class="nav-mega__item" role="menuitem">
+                  <strong>Fachzahnarzt für Oralchirurgie</strong>
+                  <span>Weisheitszähne, Wurzelspitzenresektion &amp; Zysten</span>
+                </a>
+                <a href="#leistungen" data-jump-service="implantologie" class="nav-mega__item" role="menuitem">
+                  <strong>Implantologie &amp; Fester Halt</strong>
+                  <span>Zahnimplantate aus Titan/Keramik &amp; Prothesenhalt</span>
+                </a>
+                <a href="#leistungen" data-jump-service="parodontologie" class="nav-mega__item" role="menuitem">
+                  <strong>Parodontologie</strong>
+                  <span>Schonende Zahnfleischbehandlung &amp; Knochenerhalt</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-mega-wrap">
+            <a href="#anliegen" class="nav-mega-trigger" aria-haspopup="true">
+              <span data-i18n-nav="1">Patientenservice</span>
+              <span class="nav-mega-caret" aria-hidden="true"></span>
+            </a>
+            <div class="nav-mega" role="menu" aria-label="Patientenservice">
+              <div class="nav-mega__grid">
+                <a href="#anliegen" class="nav-mega__item" role="menuitem">
+                  <strong>Ihr Anliegen wählen</strong>
+                  <span>Schnell zum richtigen Ansprechpartner</span>
+                </a>
+                <a href="#angstpatienten" class="nav-mega__item" role="menuitem">
+                  <strong>Für Angstpatienten</strong>
+                  <span>Erstgespräch ohne Instrumente &amp; Stopp-Signal</span>
+                </a>
+                <a href="#kontakt" class="nav-mega__item" role="menuitem">
+                  <strong>Akute Zahnschmerzen &amp; Notdienst</strong>
+                  <span>Kurzfristige Hilfe &amp; KZVWL-Notdienst Unna</span>
+                </a>
+                <a href="#ablauf" class="nav-mega__item" role="menuitem">
+                  <strong>Zweitmeinung &amp; FAQ</strong>
+                  <span>Ehrliche Beratung zu Heil- &amp; Kostenplänen</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#werte" data-i18n-nav="2">Praxis &amp; Werte</a>
+          <a href="#ueberweiser" data-i18n-nav="3">Für Überweiser</a>
+          <a href="#bewertungen" data-i18n-nav="4">Bewertungen</a>
+          <a href="#kontakt" data-i18n-nav="5">Kontakt</a>
+        </nav>
+
+        <div class="header__actions">
+          <a href="tel:+492303967575" class="btn btn--secondary btn--sm btn--hide-mobile">
+            0 23 03 / 96 75 75
+          </a>
+          <a href="#kontakt" class="btn btn--primary btn--sm">
+            Termin &amp; Kontakt
+          </a>
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Menü öffnen"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer__panel" role="dialog" aria-label="Mobiles Menü">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <strong class="font-serif" style="font-size: 1.2rem; color: var(--petrol-900);">Navigation</strong>
+          <button type="button" class="modal__close" id="drawer-close" aria-label="Menü schließen">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </div>
+        <nav class="mobile-drawer__links" aria-label="Mobile Navigation">
+          <a href="#werte">Philosophie &amp; Werte</a>
+          <a href="#angstpatienten">Für Angstpatienten</a>
+          <a href="#leistungen">Leistungen</a>
+          <a href="#ueberweiser">Über Dr. Braatz &amp; Überweiser</a>
+          <a href="#ablauf">Ihr Besuch &amp; FAQ</a>
+          <a href="#kontakt">Termin &amp; Anfahrt</a>
+        </nav>
+        <div style="margin-top: auto; display: grid; gap: 0.65rem;">
+          <a href="#kontakt" class="btn btn--primary">Termin anfragen</a>
+          <a href="tel:+492303967575" class="btn btn--secondary">0 23 03 / 96 75 75</a>
+        </div>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- ================================================================
+           BARRIEREFREIHEIT: EINFACHE SPRACHE & ÜBERSICHT (KOMPAKT-ANSICHT)
+           ================================================================ -->
+      <section class="easy-mode-banner" id="easy-mode-banner" hidden aria-live="polite">
+        <div class="container">
+          <div class="easy-mode-card">
+            <div class="easy-mode-card__header">
+              <div>
+                <span class="eyebrow eyebrow--warm" data-easy-field="badge">Leicht verständlich · Barrierefrei</span>
+                <h2 class="section-heading" style="margin-bottom: 0.4rem;" data-easy-field="title">
+                  Das Wichtigste auf einen Blick – in einfacher Sprache
+                </h2>
+                <p style="margin: 0; color: var(--text-secondary);" data-easy-field="intro">
+                  Hier erklären wir kurz und ohne schwierige Fachwörter, wie wir Ihnen in unserer Zahnarztpraxis in Unna helfen.
+                </p>
+              </div>
+              <button type="button" class="btn btn--secondary btn--sm" id="easy-mode-close" data-easy-field="closeBtn">
+                Standard-Ansicht
+              </button>
+            </div>
+
+            <div class="easy-mode-grid">
+              <div class="easy-box">
+                <h3 data-easy-field="box1Title">1. Wer wir sind</h3>
+                <p data-easy-field="box1Text">
+                  <strong>Dr. Martin Braatz</strong> ist Ihr Zahnarzt und Oralchirurg in Unna. Wir sind eine <strong>persönliche Praxis mit einem kleinen, festen Team</strong>. Bei uns kennen Sie Ihre Ansprechpartnerinnen und werden immer direkt von Dr. Braatz behandelt.
+                </p>
+              </div>
+              <div class="easy-box">
+                <h3 data-easy-field="box2Title">2. Was wir machen</h3>
+                <p data-easy-field="box2Text">
+                  Wir kümmern uns um gesunde Zähne: Kontrolle, Zahnreinigung, Füllungen, Zahnersatz (Kronen, Prothesen), Zahnfleisch-Behandlungen sowie schonende Zahn-Operationen (z. B. Weisheitszähne oder feste Zahnimplantate).
+                </p>
+              </div>
+              <div class="easy-box">
+                <h3 data-easy-field="box3Title">3. Wenn Sie Angst haben</h3>
+                <p data-easy-field="box3Text">
+                  Sie müssen keine Angst haben. Wir nehmen uns viel Zeit und schimpfen nicht. Beim ersten Termin können wir auch erst nur in Ruhe miteinander reden – ganz ohne Instrumente.
+                </p>
+              </div>
+              <div class="easy-box">
+                <h3 data-easy-field="box4Title">4. Termin &amp; kurze Wartezeit</h3>
+                <p data-easy-field="box4Text">
+                  Rufen Sie uns einfach an: <strong>0 23 03 / 96 75 75</strong>.<br />
+                  Wir planen unsere Termine so, dass Sie im Wartezimmer <strong>nur kurz warten müssen</strong>. Unsere Praxis ist am <strong>Ostring 37 in Unna</strong> (direkt gegenüber der Bahnhof-Tiefgarage).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           HERO SECTION
+           ================================================================ -->
+      <section class="hero" id="start">
+        <div class="container hero__grid">
+          <div>
+            <span class="eyebrow eyebrow--warm" id="hero-eyebrow">
+              Zahnarzt &amp; Fachzahnarzt für Oralchirurgie · Unna
+            </span>
+            <h1 class="hero__title" id="hero-title">
+              Persönlich, vertraut und <em>ohne Hektik</em> – Ihre Zahnarztpraxis in Unna.
+            </h1>
+            <p class="hero__subtitle" id="hero-subtitle">
+              In der Praxis von <strong>Dr. med. dent. Martin Braatz</strong> erwartet Sie
+              keine anonyme Großpraxis mit ständig wechselnden Behandlern, sondern ein
+              <strong>kleines, eingespieltes Team mit festen vertrauten Gesichtern</strong>.
+              Wir verbinden allgemeine Zahnheilkunde, Prophylaxe und Zahnersatz mit
+              spezialisierter Oralchirurgie, Implantologie und Parodontologie – mit viel Ruhe,
+              persönlicher Zeit und gut organisierten Terminen ohne lange Wartezeiten.
+            </p>
+
+            <div class="hero__actions">
+              <a href="#leistungen" class="btn btn--primary" id="hero-cta-services">
+                Unsere Leistungen
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12" />
+                  <polyline points="12 5 19 12 12 19" />
+                </svg>
+              </a>
+              <a href="#kontakt" class="btn btn--secondary" id="hero-cta-contact">
+                Termin vereinbaren
+              </a>
+              <a href="tel:+492303967575" class="hero-call-pill">
+                <span class="hero-call-pill__ico" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z" />
+                  </svg>
+                </span>
+                <span>
+                  <small id="hero-call-small">Direkt persönlich anrufen</small>
+                  <b>0 23 03 / 96 75 75</b>
+                </span>
+              </a>
+            </div>
+
+            <!-- Kompakte Live-Sprechzeiten-Box im Hero (inspiriert von zahn-do, angepasst auf Unna) -->
+            <div class="hero-hours-panel">
+              <div class="hero-hours-panel__top">
+                <span class="status-pill" data-open-status style="background: var(--petrol-100); color: var(--petrol-900);">
+                  <span class="status-dot" aria-hidden="true"></span>
+                  <span data-open-status-text>Sprechzeiten</span>
+                </span>
+                <span class="hero-hours-panel__acute" id="hero-acute-note">
+                  <strong>Akute Schmerzen?</strong> Bitte früh am Morgen anrufen – wir helfen zeitnah.
+                </span>
+              </div>
+              <dl class="hero-week-grid" aria-label="Sprechzeiten auf einen Blick">
+                <div data-hero-days="1">
+                  <dt>Montag</dt>
+                  <dd>08–13 &amp; 14–17 Uhr</dd>
+                </div>
+                <div data-hero-days="2,4">
+                  <dt>Di &amp; Do</dt>
+                  <dd>08–13 &amp; 14–18 Uhr</dd>
+                </div>
+                <div data-hero-days="3,5">
+                  <dt>Mi &amp; Fr</dt>
+                  <dd>08:00 – 13:00 Uhr</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="hero__trust">
+              <div>
+                <span class="trust-stat__value" id="trust-1-title">Fester Ansprechpartner</span>
+                <span class="trust-stat__label" id="trust-1-desc">Kleines, vertrautes Praxisteam &amp; persönliche Behandlung durch Dr. Braatz</span>
+              </div>
+              <div>
+                <span class="trust-stat__value" id="trust-2-title">Kurze Wartezeiten</span>
+                <span class="trust-stat__label" id="trust-2-desc">Sorgfältige Terminplanung für einen entspannten Ablauf ohne Hektik</span>
+              </div>
+              <div>
+                <span class="trust-stat__value" id="trust-3-title">Zahnmedizin &amp; Chirurgie</span>
+                <span class="trust-stat__label" id="trust-3-desc">Zahnarzt &amp; Fachzahnarzt für Oralchirurgie am Ostring 37 in Unna</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-visual__frame linden-surface">
+              <div class="hero-visual__photo-wrap">
+                <!-- Echtes, entzerrtes Praxisfoto: Empfang & Wartebereich Dr. Braatz in Unna -->
+                <img
+                  class="hero-visual__photo"
+                  src="assets/praxis-empfang-echt.jpg"
+                  alt="Empfang und freundlicher Wartebereich der Zahnarztpraxis Dr. med. dent. Martin Braatz in Unna"
+                  loading="eager"
+                />
+                <span class="hero-visual__badge">
+                  <span class="hero-visual__badge-dot" aria-hidden="true"></span>
+                  Original-Einblick · Empfang Ostring 37
+                </span>
+                <div class="hero-visual__overlay">
+                  <p class="hero-visual__quote">
+                    „Wir möchten, dass Sie sich bei uns vom ersten Moment an gut aufgehoben fühlen.“
+                  </p>
+                  <p class="hero-visual__caption">
+                    Unser Empfangsbereich in Unna · Warme Holztöne &amp; persönliche Betreuung
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="floating-card" aria-label="Hinweis für Angstpatienten">
+              <div class="floating-card__icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  <path d="M9 12l2 2 4-4" />
+                </svg>
+              </div>
+              <div>
+                <p class="floating-card__title">Sanft &amp; angstfrei</p>
+                <p class="floating-card__text">Erstgespräch in ruhiger Umgebung – ganz ohne Behandlungsdruck.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Qualifikations- & Vertrauens-Leiste unter dem Hero (wie zahn-do, maßgeschneidert auf Dr. Braatz Unna) -->
+        <div class="container">
+          <ul class="creds-bar reveal" aria-label="Die Praxis Dr. Martin Braatz auf einen Blick">
+            <li class="creds-bar__rating">
+              <a href="#bewertungen">
+                <span class="creds-bar__val">5,0</span>
+                <div>
+                  <span class="review-stars" aria-hidden="true">★★★★★</span>
+                  <span class="creds-bar__meta" id="creds-rating-meta">Bestnoten · Jameda &amp; Sanego</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <span class="creds-bar__ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M2 9.5 12 4.5l10 5-10 5-10-5Z" />
+                  <path d="M6 11.5v4.5c0 1.6 2.7 3 6 3s6-1.4 6-3v-4.5" />
+                </svg>
+              </span>
+              <div>
+                <strong id="creds-1-title">Fachzahnarzt</strong>
+                <span id="creds-1-sub">für Oralchirurgie &amp; Zahnheilkunde</span>
+              </div>
+            </li>
+            <li>
+              <span class="creds-bar__ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </span>
+              <div>
+                <strong id="creds-2-title">Kleines, festes Team</strong>
+                <span id="creds-2-sub">Vertraute Gesichter statt Großklinik</span>
+              </div>
+            </li>
+            <li>
+              <span class="creds-bar__ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9" />
+                  <polyline points="12 7 12 12 15 14" />
+                </svg>
+              </span>
+              <div>
+                <strong id="creds-3-title">Kurze Wartezeiten</strong>
+                <span id="creds-3-sub">Gut getaktete Bestellpraxis</span>
+              </div>
+            </li>
+            <li>
+              <span class="creds-bar__ico" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <div>
+                <strong id="creds-4-title">Ostring 37 · Unna</strong>
+                <span id="creds-4-sub">Tiefgarage Bahnhof direkt ggü.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           ANLIEGEN-WÄHLER ("Was führt Sie zu uns?" – inspiriert von zahn-do, komplett ohne Fremdfotos)
+           ================================================================ -->
+      <section class="section" id="anliegen">
+        <div class="container">
+          <div class="need-header reveal">
+            <div>
+              <span class="eyebrow eyebrow--warm" id="need-eyebrow">Ihr Anliegen</span>
+              <h2 class="section-heading" id="need-heading" style="margin-bottom: 0;">
+                Womit dürfen wir Ihnen helfen?
+              </h2>
+            </div>
+            <p class="section-lead" id="need-lead">
+              Wählen Sie einfach den Punkt, der am besten zu Ihrer Situation passt – wir führen
+              Sie ohne Umwege zur passenden Lösung in unserer Praxis in Unna.
+            </p>
+          </div>
+
+          <div class="need-grid">
+            <article class="need-card reveal">
+              <div class="need-card__top">
+                <span class="need-card__ico" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 5 2 8 .4 2.3 1 5.5 2.5 5.5S9 17 12 17s3 4 4.5 4 2.1-3.2 2.5-5.5c.5-3 2-5 2-8C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3Z" />
+                  </svg>
+                </span>
+                <span class="need-card__tag">Implantologie &amp; Zahnersatz</span>
+              </div>
+              <h3 id="need-1-title">Mir fehlen Zähne oder meine Prothese wackelt</h3>
+              <p id="need-1-text">
+                Ob einzelnes Zahnimplantat aus Titan/Keramik oder die sichere Fixierung einer
+                lockeren Vollprothese mit Mini-Implantaten – für festen Halt ohne Druckstellen.
+              </p>
+              <div class="need-card__actions">
+                <a href="#leistungen" data-jump-service="implantologie" class="btn btn--primary btn--sm">
+                  Zur Implantologie
+                </a>
+                <a href="#kontakt" class="need-card__link">Beratungstermin anfragen →</a>
+              </div>
+            </article>
+
+            <article class="need-card reveal">
+              <div class="need-card__top">
+                <span class="need-card__ico" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="9" />
+                    <path d="M12 8v8M8 12h8" />
+                  </svg>
+                </span>
+                <span class="need-card__tag">Fachzahnarzt für Oralchirurgie</span>
+              </div>
+              <h3 id="need-2-title">Weisheitszähne oder chirurgische Überweisung</h3>
+              <p id="need-2-text">
+                Schonende Entfernung verlagerter Weisheitszähne, Wurzelspitzenresektionen zum
+                Zahnerhalt oder Zystenbehandlungen – auch auf Überweisung Ihres Hauszahnarztes.
+              </p>
+              <div class="need-card__actions">
+                <a href="#leistungen" data-jump-service="oralchirurgie" class="btn btn--primary btn--sm">
+                  Zur Oralchirurgie
+                </a>
+                <a href="#ueberweiser" class="need-card__link">Infos für Überweiser →</a>
+              </div>
+            </article>
+
+            <article class="need-card need-card--warm reveal">
+              <div class="need-card__top">
+                <span class="need-card__ico" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 20s-7.5-4.6-7.5-10.2A4.2 4.2 0 0 1 12 7.3a4.2 4.2 0 0 1 7.5 2.5C19.5 15.4 12 20 12 20Z" />
+                  </svg>
+                </span>
+                <span class="need-card__tag">Einfühlsam &amp; ohne Hektik</span>
+              </div>
+              <h3 id="need-3-title">Ich habe Angst vor dem Zahnarzttermin</h3>
+              <p id="need-3-text">
+                Bei uns müssen Sie sich nicht erklären. Der erste Termin kann ein reines Gespräch
+                in unserem warmen Beratungszimmer sein – ganz ohne Instrumente und mit Stopp-Signal.
+              </p>
+              <div class="need-card__actions">
+                <a href="#angstpatienten" class="btn btn--warm btn--sm">
+                  Für Angstpatienten
+                </a>
+                <a href="#kontakt" class="need-card__link">Kennenlerntermin buchen →</a>
+              </div>
+            </article>
+
+            <article class="need-card reveal">
+              <div class="need-card__top">
+                <span class="need-card__ico" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+                  </svg>
+                </span>
+                <span class="need-card__tag">Schnelle Hilfe in Unna</span>
+              </div>
+              <h3 id="need-4-title">Ich habe akute Zahnschmerzen</h3>
+              <p id="need-4-text">
+                Rufen Sie uns bitte möglichst früh am Morgen an – durch unsere gut getaktete
+                Terminplanung ermöglichen wir kurzfristige Schmerztermine noch am selben Tag.
+              </p>
+              <div class="need-card__actions">
+                <a href="tel:+492303967575" class="btn btn--primary btn--sm">
+                  0 23 03 / 96 75 75
+                </a>
+                <a href="#kontakt" class="need-card__link">Notdienst-Infos →</a>
+              </div>
+            </article>
+
+            <article class="need-card reveal">
+              <div class="need-card__top">
+                <span class="need-card__ico" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M12 3v3.5M12 17.5V21M3 12h3.5M17.5 12H21" />
+                    <path d="M12 8.2 13.3 10.7 15.8 12 13.3 13.3 12 15.8 10.7 13.3 8.2 12 10.7 10.7Z" />
+                  </svg>
+                </span>
+                <span class="need-card__tag">Vorsorge &amp; Zahnerhalt</span>
+              </div>
+              <h3 id="need-5-title">Kontrolle, Zahnreinigung (PZR) &amp; Zahnfleisch</h3>
+              <p id="need-5-text">
+                Gründliche Vorsorge für Kinder und Erwachsene, professionelle Zahnreinigung sowie
+                schonende Parodontitis-Behandlung bei Zahnfleischbluten.
+              </p>
+              <div class="need-card__actions">
+                <a href="#leistungen" data-jump-service="zahnheilkunde" class="btn btn--primary btn--sm">
+                  Zur Zahnheilkunde
+                </a>
+                <a href="#leistungen" data-jump-service="parodontologie" class="need-card__link">Parodontologie →</a>
+              </div>
+            </article>
+
+            <article class="need-card reveal">
+              <div class="need-card__top">
+                <span class="need-card__ico" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z" />
+                    <path d="M14 3v5h5" />
+                    <path d="m9 14 2 2 4-4" />
+                  </svg>
+                </span>
+                <span class="need-card__tag">Ehrlich &amp; transparent</span>
+              </div>
+              <h3 id="need-6-title">Ich wünsche eine ehrliche Zweitmeinung</h3>
+              <p id="need-6-text">
+                Sie haben bereits einen Heil- und Kostenplan oder stehen vor einem größeren
+                Eingriff? Dr. Braatz berät Sie ergebnisoffen, was medizinisch sinnvoll und machbar ist.
+              </p>
+              <div class="need-card__actions">
+                <a href="#kontakt" class="btn btn--secondary btn--sm">
+                  Beratung vereinbaren
+                </a>
+                <a href="#werte" class="need-card__link">Unsere Philosophie →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           PRAXIS-WERTE (BENTO GRID)
+           ================================================================ -->
+      <section class="section section--warm" id="werte">
+        <div class="container">
+          <div class="reveal">
+            <span class="eyebrow" id="werte-eyebrow">Wofür wir stehen</span>
+            <h2 class="section-heading" id="werte-heading">Klein, persönlich und mit Zeit für Sie.</h2>
+            <p class="section-lead" id="werte-lead">
+              Bei uns sind Sie keine Nummer: Als bewusst persönlich geführte Praxis mit einem
+              kleinen, herzlich eingespielten Team kennen wir unsere Patientinnen und Patienten –
+              und begleiten Sie verlässlich vom Empfang bis zur Nachsorge.
+            </p>
+          </div>
+
+          <div class="bento-grid">
+            <article class="bento-card reveal">
+              <div class="bento-card__icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+                </svg>
+              </div>
+              <h3 id="bento-1-title">Wir sind Spezialisten!</h3>
+              <p id="bento-1-text">
+                Unser Fokus liegt auf der funktionellen Erhaltung und Wiederherstellung einzelner
+                Zähne sowie des gesamten Kauorgans – verbunden mit natürlicher Ästhetik und
+                modernster zahnärztlicher wie oralchirurgischer Fachkompetenz aus einer Hand.
+              </p>
+            </article>
+
+            <article class="bento-card bento-card--linden reveal">
+              <div class="bento-card__icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <h3 id="bento-2-title">Wir nehmen uns Zeit – bei kurzen Wartezeiten!</h3>
+              <p id="bento-2-text">
+                Durch unser kleines, perfekt eingespieltes Team planen wir Termine realistisch
+                und verlässlich. Das bedeutet für Sie: kurze Wartezeiten im Wartezimmer und
+                dennoch volle Ruhe und Aufmerksamkeit im Behandlungszimmer.
+              </p>
+            </article>
+
+            <article class="bento-card reveal">
+              <div class="bento-card__icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+              </div>
+              <h3 id="bento-3-title">Wir hören zu – mit vertrauten Gesichtern!</h3>
+              <p id="bento-3-text">
+                Bei uns treffen Sie immer auf dieselben vertrauten Ansprechpartnerinnen und
+                denselben Behandler. Wir beraten ehrlich, verständlich und ohne Zeitdruck, was
+                in Ihrem Fall medizinisch sinnvoll ist.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           ANGSTPATIENTEN & WOHLFÜHL-ATMOSPHÄRE (GELBES ZIMMER / HERBSTLINDEN)
+           ================================================================ -->
+      <section class="section" id="angstpatienten">
+        <div class="container">
+          <div class="comfort-banner linden-surface reveal">
+            <div>
+              <span class="eyebrow eyebrow--warm">Speziell für Angstpatienten</span>
+              <h2 class="section-heading">
+                Ankommen statt Anspannung – ein Raum zum Durchatmen.
+              </h2>
+              <p class="section-lead" style="color: var(--text-primary);">
+                Viele Menschen verbinden Oralchirurgie mit kalten, sterilen Räumen und
+                Unsicherheit. Genau dem setzen wir bewusst Wärme, Natürlichkeit und
+                Transparenz entgegen – inspiriert von ruhigen Naturfarben wie warmem
+                Sonnengelb und zarten Herbstlinden-Motiven.
+              </p>
+
+              <ul class="comfort-list">
+                <li>
+                  <span class="comfort-list__check" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>Erstgespräch ohne Instrumente:</strong> Auf Wunsch lernen wir uns
+                    zuerst in aller Ruhe im Gespräch kennen – bevor überhaupt etwas passiert.
+                  </span>
+                </li>
+                <li>
+                  <span class="comfort-list__check" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>Sie behalten die Kontrolle:</strong> Wir erklären jeden Schritt
+                    verständlich, vereinbaren ein Handzeichen für Pausen und arbeiten absolut
+                    schmerzarm.
+                  </span>
+                </li>
+                <li>
+                  <span class="comfort-list__check" aria-hidden="true">✓</span>
+                  <span>
+                    <strong>Ehrlichkeit statt Überforderung:</strong> Keine falschen
+                    Werbeversprechen – wir sagen Ihnen klar, was sinnvoll und schonend möglich ist.
+                  </span>
+                </li>
+              </ul>
+
+              <a href="#kontakt" class="btn btn--primary">
+                Ruhiges Erstgespräch anfragen
+              </a>
+            </div>
+
+            <div class="comfort-visual">
+              <div class="comfort-visual__img-wrap">
+                <img
+                  class="comfort-visual__img"
+                  src="assets/praxis-flur-behandlungsraeume.jpg"
+                  alt="Heller, warmer Praxisflur und Zugang zu den Behandlungsräumen der Praxis Dr. Braatz in Unna"
+                  loading="lazy"
+                />
+                <span class="comfort-visual__badge">Original-Praxiseinblick · Unna</span>
+              </div>
+              <div class="comfort-note" id="comfort-phone-note">
+                <strong>Sprechen Sie uns einfach an:</strong> Geben Sie bei der
+                telefonischen Terminvereinbarung unter <strong>0 23 03 / 96 75 75</strong>
+                gerne kurz Bescheid, wenn Sie etwas nervös sind – wir planen dann bewusst
+                mehr Zeit für ein ruhiges Erstgespräch ein.
+              </div>
+            </div>
+          </div>
+
+          <!-- Interaktiver Praxis-Rundgang (Entzerrtes Original-Panorama) -->
+          <div class="praxis-tour-card reveal">
+            <div class="praxis-tour-card__header">
+              <div>
+                <span class="eyebrow" id="tour-eyebrow">Original-Einblick · Ostring 37 in Unna</span>
+                <h3 class="praxis-tour-card__title" id="tour-title">Ein Blick in unsere Praxisräume</h3>
+                <p class="praxis-tour-card__subtitle" id="tour-subtitle">
+                  Warme Holztöne, freundliches Licht und kurze Wege: Bewegen Sie den Blick über
+                  unseren Empfangs- und Praxisbereich.
+                </p>
+              </div>
+              <div class="praxis-tour-card__controls" role="group" aria-label="Praxisansicht wählen">
+                <button type="button" class="tour-btn is-active" data-tour-view="left" id="tour-btn-1">
+                  Wartebereich &amp; Empfang
+                </button>
+                <button type="button" class="tour-btn" data-tour-view="center" id="tour-btn-2">
+                  Rezeption
+                </button>
+                <button type="button" class="tour-btn" data-tour-view="right" id="tour-btn-3">
+                  Behandlungsflur
+                </button>
+                <button type="button" class="tour-btn" data-tour-view="exterior" id="tour-btn-4">
+                  Praxisgebäude Ostring 37
+                </button>
+              </div>
+            </div>
+            <div class="praxis-tour-viewport" id="praxis-tour-viewport">
+              <img
+                src="assets/praxis-rundgang-panorama.jpg"
+                alt="Panorama-Einblick in den Empfang, Wartebereich und Flur der Zahnarztpraxis Dr. med. dent. Martin Braatz in Unna"
+                class="praxis-tour-viewport__img"
+                id="praxis-tour-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           INTERAKTIVER LEISTUNGS-EXPLORER (Textlich nah am Original)
+           ================================================================ -->
+      <section class="section section--warm" id="leistungen">
+        <div class="container">
+          <div class="reveal">
+            <span class="eyebrow">Zahnarzt &amp; Fachzahnarzt für Oralchirurgie</span>
+            <h2 class="section-heading">Unsere Leistungen für Ihre Zahngesundheit.</h2>
+            <p class="section-lead">
+              Unser Hauptaugenmerk gilt der funktionellen Erhaltung und Wiederherstellung
+              einzelner Zähne sowie des gesamten Kauorgans – verbunden mit natürlicher
+              Ästhetik, moderner Technik und langjähriger Erfahrung in der gesamten
+              Zahnheilkunde und Oralchirurgie.
+            </p>
+          </div>
+
+          <div class="services-tabs" role="tablist" aria-label="Fachbereiche">
+            <button
+              type="button"
+              class="service-tab"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-zahnheilkunde"
+              data-service-tab="zahnheilkunde"
+            >
+              Zahnheilkunde
+            </button>
+            <button
+              type="button"
+              class="service-tab"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-oralchirurgie"
+              data-service-tab="oralchirurgie"
+              tabindex="-1"
+            >
+              Oralchirurgie
+            </button>
+            <button
+              type="button"
+              class="service-tab"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-implantologie"
+              data-service-tab="implantologie"
+              tabindex="-1"
+            >
+              Implantologie
+            </button>
+            <button
+              type="button"
+              class="service-tab"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-parodontologie"
+              data-service-tab="parodontologie"
+              tabindex="-1"
+            >
+              Parodontologie
+            </button>
+          </div>
+
+          <!-- Panel 1: Zahnheilkunde (Aktiv als erster Zahnarzt-Tab) -->
+          <div
+            id="panel-zahnheilkunde"
+            class="service-panel is-active"
+            role="tabpanel"
+            data-service-panel="zahnheilkunde"
+          >
+            <div>
+              <span class="eyebrow">Allgemeine &amp; Ästhetische Zahnheilkunde</span>
+              <h3 class="service-panel__title">Umfassende Zahnheilkunde aus einer Hand</h3>
+              <p style="color: var(--text-secondary);">
+                Neben der Spezialisierung auf Oralchirurgie verfügt Dr. med. dent. Martin Braatz
+                über mehr als zehn Jahre Erfahrung in der gesamten allgemeinen Zahnheilkunde.
+                Moderne Technik und kontinuierliche Fortbildung sorgen dafür, dass wir Ihre
+                Zähne langfristig gesund, funktional und ästhetisch erhalten.
+              </p>
+              <ul class="service-checklist">
+                <li><span class="service-checklist__dot"></span><span>Prophylaxe für Kinder und Erwachsene</span></li>
+                <li><span class="service-checklist__dot"></span><span>Professionelle Zahnreinigung (PZR)</span></li>
+                <li><span class="service-checklist__dot"></span><span>Parodontologie &amp; Zahnfleischbehandlung</span></li>
+                <li><span class="service-checklist__dot"></span><span>Zahnerhaltung (Füllungen &amp; Wurzelbehandlungen)</span></li>
+                <li><span class="service-checklist__dot"></span><span>Hochwertiger Zahnersatz (Kronen &amp; Brücken)</span></li>
+                <li><span class="service-checklist__dot"></span><span>Implantatversorgungen</span></li>
+                <li><span class="service-checklist__dot"></span><span>Teilprothesen &amp; Vollprothesen</span></li>
+                <li><span class="service-checklist__dot"></span><span>Prothesenfixierungen mit Mini-Implantaten</span></li>
+                <li><span class="service-checklist__dot"></span><span>Kiefergelenksbehandlungen</span></li>
+                <li><span class="service-checklist__dot"></span><span>Ästhetische Zahnbehandlungen</span></li>
+              </ul>
+            </div>
+            <aside class="service-aside">
+              <div class="service-aside__card service-aside__card--warm">
+                <h4>Ihre Zahnarztpraxis für die ganze Familie</h4>
+                <p>
+                  Von der regelmäßigen Vorsorge für Kinder und Erwachsene bis zum passgenauen
+                  Zahnersatz begleiten wir Sie dauerhaft, ehrlich und ohne Hektik.
+                </p>
+              </div>
+              <div class="service-aside__card">
+                <h4>Moderne Technik &amp; Fortbildung</h4>
+                <p>
+                  Durch regelmäßige Fortbildungen und zeitgemäße Ausstattung verbinden wir
+                  bewährte Zahnmedizin mit schonenden modernen Verfahren.
+                </p>
+              </div>
+              <a href="#kontakt" class="btn btn--primary">Termin telefonisch vereinbaren</a>
+            </aside>
+          </div>
+
+          <!-- Panel 2: Oralchirurgie -->
+          <div
+            id="panel-oralchirurgie"
+            class="service-panel"
+            role="tabpanel"
+            data-service-panel="oralchirurgie"
+            hidden
+          >
+            <div>
+              <span class="eyebrow">Fachzahnarzt für Oralchirurgie</span>
+              <h3 class="service-panel__title">Spezialisierte Oralchirurgie</h3>
+              <p style="color: var(--text-secondary);">
+                Nach dem Zahnmedizinstudium hat Dr. Martin Braatz eine dreijährige
+                Weiterbildung mit abschließender Facharztprüfung absolviert. Langjährige
+                operative Erfahrung und die enge Abstimmung im Praxisteam gewährleisten einen
+                sicheren, ruhigen und schonenden Eingriff.
+              </p>
+              <ul class="service-checklist">
+                <li><span class="service-checklist__dot"></span><span>Wurzelspitzenresektionen zur Zahnerhaltung</span></li>
+                <li><span class="service-checklist__dot"></span><span>Entfernung verlagerter Zähne</span></li>
+                <li><span class="service-checklist__dot"></span><span>Entfernung von Weisheitszähnen</span></li>
+                <li><span class="service-checklist__dot"></span><span>Freilegung verlagerter Zähne</span></li>
+                <li><span class="service-checklist__dot"></span><span>Behandlung von Zysten und Tumoren</span></li>
+                <li><span class="service-checklist__dot"></span><span>Reimplantation und Transplantation</span></li>
+                <li><span class="service-checklist__dot"></span><span>Hemisektion</span></li>
+                <li><span class="service-checklist__dot"></span><span>Beseitigung / Verlängerung von Lippen-, Wangen- oder Zungenbändchen</span></li>
+                <li><span class="service-checklist__dot"></span><span>Behandlung von Schleimhautveränderungen</span></li>
+              </ul>
+            </div>
+            <aside class="service-aside">
+              <div class="service-aside__card service-aside__card--warm">
+                <h4>Ruhiger Ablauf &amp; klare Aufklärung</h4>
+                <p>
+                  Wir nehmen uns vor jedem Eingriff Zeit, um alle Fragen in Ruhe zu klären –
+                  für eine sichere, schmerzarme Behandlung auf höchstem fachärztlichem Niveau.
+                </p>
+              </div>
+              <div class="service-aside__card">
+                <h4>Zusammenarbeit mit Ihrem Hauszahnarzt</h4>
+                <p>
+                  Auch bei Überweisungen arbeiten wir vertrauensvoll mit Ihrer behandelnden
+                  Zahnarztpraxis zusammen.
+                </p>
+              </div>
+              <a href="#kontakt" class="btn btn--primary">Beratungstermin vereinbaren</a>
+            </aside>
+          </div>
+
+          <!-- Panel 3: Implantologie -->
+          <div
+            id="panel-implantologie"
+            class="service-panel"
+            role="tabpanel"
+            data-service-panel="implantologie"
+            hidden
+          >
+            <div>
+              <span class="eyebrow">Künstliche Zahnwurzeln &amp; Fester Halt</span>
+              <h3 class="service-panel__title">Implantologie</h3>
+              <p style="color: var(--text-secondary);">
+                Zahnimplantate sind künstliche Zahnwurzeln in Schraubenform aus
+                körperverträglichem Titan oder Keramik. In Verbindung mit zahnfarbenen
+                Keramikkronen bieten sie eine ästhetische, belastbare und funktionelle
+                Lösung – vom Einzelzahn bis zur stabilen Fixierung lockerer Vollprothesen.
+              </p>
+              <ul class="service-checklist">
+                <li><span class="service-checklist__dot"></span><span>Künstliche Zahnwurzeln aus Titan oder Keramik</span></li>
+                <li><span class="service-checklist__dot"></span><span>Zahnfarbene Keramikkronen für natürliche Ästhetik</span></li>
+                <li><span class="service-checklist__dot"></span><span>Hohe Belastbarkeit &amp; volle Kaufunktion</span></li>
+                <li><span class="service-checklist__dot"></span><span>Sichere Fixierung lockerer Vollprothesen</span></li>
+                <li><span class="service-checklist__dot"></span><span>Keine schmerzhaften Druckstellen</span></li>
+                <li><span class="service-checklist__dot"></span><span>Kein Verrutschen &amp; keine Haftcreme nötig</span></li>
+              </ul>
+            </div>
+            <aside class="service-aside">
+              <div class="service-aside__card service-aside__card--warm">
+                <h4>Wieder sicher zubeißen</h4>
+                <p>
+                  Implantate geben Ihnen das sichere Gefühl eigener Zähne zurück – beim Essen,
+                  Sprechen und unbeschwerten Lachen.
+                </p>
+              </div>
+              <a href="#kontakt" class="btn btn--primary">Implantat-Beratung vereinbaren</a>
+            </aside>
+          </div>
+
+          <!-- Panel 4: Parodontologie -->
+          <div
+            id="panel-parodontologie"
+            class="service-panel"
+            role="tabpanel"
+            data-service-panel="parodontologie"
+            hidden
+          >
+            <div>
+              <span class="eyebrow">Zahnhalteapparat &amp; Vorsorge</span>
+              <h3 class="service-panel__title">Parodontologie</h3>
+              <p style="color: var(--text-secondary);">
+                Parodontitis ist eine häufig unterschätzte Ursache für Zahnverlust bei
+                Erwachsenen und führt unbehandelt zu unwiederbringlichem Abbau des
+                Kieferknochens. Erste Warnsignale sind oft Mundgeruch oder Zahnfleischbluten.
+              </p>
+              <ul class="service-checklist">
+                <li><span class="service-checklist__dot"></span><span>Früherkennung bei Zahnfleischbluten &amp; Mundgeruch</span></li>
+                <li><span class="service-checklist__dot"></span><span>Vorbehandlung durch professionelle Zahnreinigung (PZR)</span></li>
+                <li><span class="service-checklist__dot"></span><span>Parodontalbehandlung unterhalb des Zahnfleischsaums</span></li>
+                <li><span class="service-checklist__dot"></span><span>Schonende Durchführung unter lokaler Betäubung</span></li>
+                <li><span class="service-checklist__dot"></span><span>Erhalt von Zähnen und Kieferknochen</span></li>
+                <li><span class="service-checklist__dot"></span><span>Regelmäßige Nachsorge zur langfristigen Stabilität</span></li>
+              </ul>
+            </div>
+            <aside class="service-aside">
+              <div class="service-aside__card service-aside__card--warm">
+                <h4>Auswirkungen auf den ganzen Körper</h4>
+                <p>
+                  Eine unbehandelte Parodontitis steht im Zusammenhang mit erhöhten Risiken für
+                  Diabetes, Erkrankungen der Herzkranzgefäße, Schlaganfall sowie
+                  Schwangerschaftskomplikationen.
+                </p>
+              </div>
+              <a href="#kontakt" class="btn btn--primary">Zahnfleisch-Check vereinbaren</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           VORWORT, PHILOSOPHIE & FÜR ÜBERWEISER (Nah am Original)
+           ================================================================ -->
+      <section class="section" id="ueberweiser">
+        <div class="container split-grid">
+          <article class="feature-box reveal">
+            <div>
+              <span class="eyebrow">Vorwort &amp; Praxisphilosophie</span>
+              <h2 class="section-heading" style="font-size: clamp(1.7rem, 2.8vw, 2.3rem);">
+                Zufriedene Patienten, ein starkes Team und ehrliche Beratung.
+              </h2>
+              <p style="color: var(--text-secondary);">
+                Mit dieser Webseite möchten wir Ihnen unsere Praxis, unsere Mitarbeiterinnen
+                und unsere Tätigkeitsfelder vorstellen – und laden Sie herzlich zu einem
+                persönlichen Besuch ein. Bewusst verzichten wir auf übertriebene
+                Werbeversprechen: Gut informierte Patientinnen und Patienten wissen, was sie
+                sich wünschen, und verdienen eine ehrliche Beratung darüber, was im eigenen
+                Fall medizinisch sinnvoll und machbar ist.
+              </p>
+              <p style="color: var(--text-secondary);">
+                Im Mittelpunkt unserer Philosophie stehen Ihre Zufriedenheit sowie ein
+                vertrauensvoller, freundlicher und höflicher Umgang miteinander. Ebenso
+                wichtig sind uns die Zufriedenheit und persönliche Weiterentwicklung unserer
+                Mitarbeiterinnen, kontinuierliches Lernen, ein gelebtes Qualitätsmanagement
+                (QM) und eine solide Führung der Praxis als modernes medizinisches
+                Dienstleistungsunternehmen.
+              </p>
+              <div class="qm-pills">
+                <span class="qm-pill">Qualitätsmanagement (QM)</span>
+                <span class="qm-pill">Vertrauensvoller Umgang</span>
+                <span class="qm-pill">Kontinuierliches Lernen</span>
+                <span class="qm-pill">Ehrliche Aufklärung</span>
+              </div>
+            </div>
+            <div>
+              <a href="#kontakt" class="btn btn--secondary">Kontakt &amp; Sprechzeiten ansehen</a>
+            </div>
+          </article>
+
+          <article class="feature-box feature-box--petrol reveal">
+            <div>
+              <span class="eyebrow">Für zahnärztliche Kolleginnen &amp; Kollegen</span>
+              <h2 class="section-heading" style="font-size: clamp(1.7rem, 2.8vw, 2.3rem);">
+                Vertrauensvolle Partnerschaft für Überweiser.
+              </h2>
+              <p>
+                Als oralchirurgische Fachzahnarztpraxis verstehen wir uns als verlässlicher
+                Partner an Ihrer Seite. Eine offene Kommunikation und die konsequente
+                Rücküberweisung Ihrer Patientinnen und Patienten sind für uns selbstverständlich.
+              </p>
+              <ul class="referrer-list">
+                <li>
+                  <span style="color: var(--linden-light);">●</span>
+                  <span>Schnelle Terminvergabe bei akuten chirurgischen Befunden</span>
+                </li>
+                <li>
+                  <span style="color: var(--linden-light);">●</span>
+                  <span>Ausführlicher Behandlungsbericht &amp; enge Rücksprache</span>
+                </li>
+                <li>
+                  <span style="color: var(--linden-light);">●</span>
+                  <span>Garantierte Rücküberweisung für die Weiterbehandlung</span>
+                </li>
+              </ul>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+              <a href="tel:+492303967575" class="btn btn--warm">
+                Kollegen-Direktwahl: 0 23 03 / 96 75 75
+              </a>
+              <a href="mailto:praxis@dr-braatz.de?subject=Überweisung%20/%20Kollegenanfrage" class="btn btn--ghost" style="color: #fff; border-color: rgba(255,255,255,0.3);">
+                E-Mail senden
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           ABLAUF & HÄUFIGE FRAGEN (FAQ)
+           ================================================================ -->
+      <section class="section section--warm" id="ablauf">
+        <div class="container">
+          <div class="reveal">
+            <span class="eyebrow">Klar &amp; transparent</span>
+            <h2 class="section-heading">So entspannt läuft Ihr Besuch bei uns ab.</h2>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card reveal">
+              <span class="step-card__num">01</span>
+              <h3>Ankommen &amp; Zuhören</h3>
+              <p>
+                Sie nehmen in ruhiger, warmer Atmosphäre Platz. Wir besprechen Ihr Anliegen,
+                Ihre Wünsche und eventuelle Ängste ohne Zeitdruck.
+              </p>
+            </div>
+            <div class="step-card reveal">
+              <span class="step-card__num">02</span>
+              <h3>Präzise Diagnostik</h3>
+              <p>
+                Mit moderner Technik verschaffen wir uns ein genaues Bild und erklären Ihnen
+                alle Optionen verständlich und offen.
+              </p>
+            </div>
+            <div class="step-card reveal">
+              <span class="step-card__num">03</span>
+              <h3>Schonende Behandlung</h3>
+              <p>
+                Schmerzfrei, ruhig und minimalinvasiv – auf Wunsch mit klaren Handzeichen für
+                jederzeitige Pausen.
+              </p>
+            </div>
+            <div class="step-card reveal">
+              <span class="step-card__num">04</span>
+              <h3>Sichere Nachsorge</h3>
+              <p>
+                Sie erhalten klare Hinweise für zu Hause, einen Kontrolltermin und sind bei
+                Rückfragen jederzeit gut betreut.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 3.75rem;" class="reveal" id="bewertungen">
+            <div class="reviews-header">
+              <div>
+                <span class="eyebrow" id="reviews-eyebrow">Patientenstimmen &amp; Erfahrungen</span>
+                <h3 class="section-heading" style="font-size: clamp(1.65rem, 2.6vw, 2.2rem); margin-bottom: 0.35rem;" id="reviews-heading">
+                  Das schätzen unsere Patientinnen und Patienten
+                </h3>
+                <p class="section-lead" id="reviews-lead">
+                  Rückmeldungen aus unabhängigen Arztbewertungsportalen (wie Jameda &amp; Sanego) zu
+                  unserer Praxis in Unna:
+                </p>
+              </div>
+              <div class="reviews-score-badge">
+                <span class="reviews-score-badge__val">5,0</span>
+                <div>
+                  <span class="review-stars" aria-hidden="true">★★★★★</span>
+                  <span class="reviews-score-badge__meta">Weiterempfehlung · Jameda &amp; Sanego</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-showcase">
+              <!-- Großes interaktives Bewertungs-Karussell (inspiriert von zahn-do) -->
+              <div class="rbig-carousel" id="rbig-carousel" aria-roledescription="Karussell" aria-label="Ausgewählte Patientenbewertungen">
+                <div class="rbig-carousel__slides">
+                  <figure class="rbig-slide is-active" data-rbig-slide="0">
+                    <span class="review-stars" aria-label="5 von 5 Sternen">★★★★★</span>
+                    <blockquote id="rev-1-quote">
+                      „Dr. Braatz strahlt eine unglaubliche Ruhe aus und erklärt jeden Schritt ganz
+                      genau. Auch das Praxisteam ist super freundlich, geduldig und herzlich – man
+                      fühlt sich sofort ernst genommen.“
+                    </blockquote>
+                    <figcaption>
+                      <span class="rbig-avatar" aria-hidden="true">P</span>
+                      <div>
+                        <strong id="rev-1-badge">Angstpatienten &amp; Ruhe</strong>
+                        <small id="rev-1-meta">Verifizierte Patientenrückmeldung · Oralchirurgie</small>
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="rbig-slide" data-rbig-slide="1" hidden>
+                    <span class="review-stars" aria-label="5 von 5 Sternen">★★★★★</span>
+                    <blockquote id="rev-2-quote">
+                      „Sehr gut organisierte Praxis mit einem kleinen, festen Team. Kaum Wartezeit im
+                      Wartezimmer und während der Behandlung überhaupt keine Hektik. Hier nimmt man
+                      sich noch wirklich Zeit.“
+                    </blockquote>
+                    <figcaption>
+                      <span class="rbig-avatar" aria-hidden="true">K</span>
+                      <div>
+                        <strong id="rev-2-badge">Kurze Wartezeiten</strong>
+                        <small id="rev-2-meta">Verifizierte Patientenrückmeldung · Zahnheilkunde</small>
+                      </div>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="rbig-slide" data-rbig-slide="2" hidden>
+                    <span class="review-stars" aria-label="5 von 5 Sternen">★★★★★</span>
+                    <blockquote id="rev-3-quote">
+                      „Ich wurde von meinem Hauszahnarzt überwiesen. Vom ersten Gespräch bis zur
+                      Nachsorge lief alles schmerzfrei, ehrlich und hochprofessionell ab. Absolute
+                      Empfehlung in Unna!“
+                    </blockquote>
+                    <figcaption>
+                      <span class="rbig-avatar" aria-hidden="true">M</span>
+                      <div>
+                        <strong id="rev-3-badge">Weisheitszähne &amp; Implantate</strong>
+                        <small id="rev-3-meta">Verifizierte Patientenrückmeldung · Überweisung</small>
+                      </div>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="rbig-carousel__nav">
+                  <div class="rbig-dots" role="tablist" aria-label="Bewertung wählen">
+                    <button type="button" class="rbig-dot is-active" data-rbig-dot="0" aria-label="Bewertung 1"></button>
+                    <button type="button" class="rbig-dot" data-rbig-dot="1" aria-label="Bewertung 2"></button>
+                    <button type="button" class="rbig-dot" data-rbig-dot="2" aria-label="Bewertung 3"></button>
+                  </div>
+                  <div class="rbig-arrows">
+                    <button type="button" class="rbig-arrow" id="rbig-prev" aria-label="Vorherige Bewertung">←</button>
+                    <button type="button" class="rbig-arrow" id="rbig-next" aria-label="Nächste Bewertung">→</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2 Begleit-Karten rechts -->
+              <div class="reviews-side-stack">
+                <article class="review-card review-card--warm">
+                  <div class="review-card__top">
+                    <span class="review-stars" aria-label="5 von 5 Sternen">★★★★★</span>
+                    <span class="review-badge">Feste Ansprechpartner</span>
+                  </div>
+                  <p class="review-card__quote">
+                    „Man merkt sofort, dass das kleine Team perfekt eingespielt ist. Keine
+                    Abfertigung wie in einer großen Klinik, sondern ehrliche, persönliche Betreuung.“
+                  </p>
+                  <span class="review-card__meta">Patientenrückmeldung · Praxis Unna</span>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-card__top">
+                    <span class="review-stars" aria-label="5 von 5 Sternen">★★★★★</span>
+                    <span class="review-badge">Einfühlsame Aufklärung</span>
+                  </div>
+                  <p class="review-card__quote">
+                    „Vor meiner Implantation wurde ich ausführlich und ohne Zeitdruck beraten. Der
+                    Eingriff selbst war viel harmloser als gedacht und das Ergebnis sitzt perfekt.“
+                  </p>
+                  <span class="review-card__meta">Patientenrückmeldung · Implantologie</span>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 3.75rem;" class="reveal">
+            <span class="eyebrow">Häufige Fragen</span>
+            <h3 class="section-heading" style="font-size: clamp(1.65rem, 2.6vw, 2.2rem);">
+              Gut zu wissen vor Ihrem Termin
+            </h3>
+
+            <div class="faq-list">
+              <details class="faq-item" open>
+                <summary>
+                  <span>Wo kann ich in der Nähe der Praxis parken?</span>
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-item__content">
+                  Sehr komfortabel: Direkt gegenüber unserer Praxis am Ostring 37 finden Sie
+                  die <strong>Tiefgarage am Bahnhof Unna</strong>. Auch mit Bus und Bahn sind
+                  wir durch die unmittelbare Bahnhofsnähe bequem erreichbar.
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>Brauche ich eine Überweisung für einen Termin?</span>
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-item__content">
+                  Nein, Sie können auch direkt einen Termin bei uns vereinbaren. Falls Ihr
+                  Hauszahnarzt Sie für einen oralchirurgischen Eingriff oder eine
+                  Implantatversorgung überweist, bringen Sie die Überweisung und vorhandene
+                  Röntgenbilder bitte einfach mit.
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>Ich habe starke Angst vor dem Zahnarzt – wie gehen Sie damit um?</span>
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-item__content">
+                  Bitte sagen Sie uns das gerne schon bei der Terminvereinbarung. Wir planen
+                  extra Zeit ein, starten auf Wunsch mit einem reinen Kennenlern- und
+                  Beratungsgespräch ohne Behandlung und erklären jeden Schritt in Ruhe.
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>Nehmen Sie neue Patientinnen und Patienten (Kasse &amp; Privat) auf?</span>
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-item__content">
+                  Ja, wir heißen neue Patientinnen und Patienten aus Unna und Umgebung herzlich
+                  willkommen – sowohl gesetzlich Versicherte (GKV) als auch Privatversicherte
+                  (PKV). Rufen Sie uns zur Terminabsprache einfach unter
+                  <strong>0 23 03 / 96 75 75</strong> an.
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>Wie transparent sind die Kosten bei Zahnersatz oder Implantaten?</span>
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-item__content">
+                  Vor jeder größeren Behandlung oder Implantatversorgung erstellen wir einen
+                  verständlichen, schriftlichen <strong>Heil- und Kostenplan</strong>. So kennen
+                  Sie alle Kosten und eventuellen Eigenanteile ganz genau, bevor Sie sich in Ruhe
+                  entscheiden. Gerne beraten wir Sie auch im Rahmen einer ärztlichen
+                  <strong>Zweitmeinung</strong>.
+                </div>
+              </details>
+
+              <details class="faq-item">
+                <summary>
+                  <span>Kann ich Termine auch online über Doctolib buchen?</span>
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </summary>
+                <div class="faq-item__content">
+                  Die Anbindung an <strong>Doctolib</strong> ist auf dieser Webseite bereits
+                  vorbereitet und kann auf Wunsch der Praxis jederzeit freigeschaltet werden.
+                  Darüber hinaus erreichen Sie unser Praxisteam jederzeit persönlich unter
+                  <strong>0 23 03 / 96 75 75</strong> oder per E-Mail an
+                  <strong>praxis@dr-braatz.de</strong>.
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           KONTAKT, TERMINVEREINBARUNG (TELEFON + DOCTOLIB) & ANFAHRT
+           ================================================================ -->
+      <section class="section" id="kontakt">
+        <div class="container">
+          <div class="reveal">
+            <span class="eyebrow">Standort, Kontakt &amp; Terminvereinbarung</span>
+            <h2 class="section-heading">Wir freuen uns auf Ihren Besuch.</h2>
+            <p class="section-lead">
+              Vereinbaren Sie Ihren Termin gerne persönlich per Telefon oder E-Mail – und auf
+              Wunsch künftig auch direkt online über Doctolib.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left: Direct Phone / Email & Optional Doctolib -->
+            <div class="booking-card reveal">
+              <div class="direct-contact-panel">
+                <span class="eyebrow" id="contact-panel-eyebrow">Persönliche Terminvereinbarung</span>
+                <p style="margin: 0; color: var(--text-secondary);" id="contact-panel-text">
+                  Rufen Sie uns einfach während unserer Sprechzeiten an. Unser kleines,
+                  vertrautes Team am Empfang kennt die Abläufe genau und findet gemeinsam mit
+                  Ihnen einen passenden Termin – ohne Warteschleife.
+                </p>
+                <a href="tel:+492303967575" class="direct-contact-phone">
+                  0 23 03 / 96 75 75
+                </a>
+                <div class="wait-time-badges" id="wait-time-badges">
+                  <div class="wait-badge">
+                    <span class="wait-badge__dot" aria-hidden="true"></span>
+                    <span><strong>Kurze Wartezeit vor Ort:</strong> Gut getaktete Bestellpraxis ohne volles Wartezimmer</span>
+                  </div>
+                  <div class="wait-badge">
+                    <span class="wait-badge__dot" aria-hidden="true"></span>
+                    <span><strong>Bei akuten Schmerzen:</strong> Kurzfristige Hilfe nach telefonischer Rücksprache</span>
+                  </div>
+                </div>
+                <div class="direct-contact-actions">
+                  <a href="tel:+492303967575" class="btn btn--primary" id="btn-call-now">
+                    Jetzt anrufen
+                  </a>
+                  <a href="mailto:praxis@dr-braatz.de?subject=Terminanfrage%20Praxis%20Dr.%20Braatz" class="btn btn--secondary" id="btn-mail-now">
+                    E-Mail schreiben
+                  </a>
+                </div>
+                <div class="direct-contact-hint" id="contact-anxiety-hint">
+                  <strong>Für Angstpatienten:</strong> Sagen Sie uns am Telefon gerne kurz
+                  Bescheid, falls Sie unsicher sind – wir planen bewusst mehr Zeit für ein
+                  ruhiges Kennenlernen ein.
+                </div>
+              </div>
+
+              <!-- Optional Doctolib Integration -->
+              <div class="doctolib-box">
+                <div class="doctolib-badge">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="3" />
+                    <line x1="16" y1="2" x2="16" y2="6" />
+                    <line x1="8" y1="2" x2="8" y2="6" />
+                    <line x1="3" y1="10" x2="21" y2="10" />
+                    <path d="M9 16l2 2 4-4" />
+                  </svg>
+                  Doctolib Online-Terminbuchung
+                </div>
+                <span class="doctolib-status" id="doctolib-status-badge">
+                  Optional aktivierbar (auf Wunsch der Praxis)
+                </span>
+                <p id="doctolib-description" style="margin: 0; color: var(--text-secondary); font-size: 0.93rem;">
+                  Die direkte Doctolib-Anbindung ist technisch vorbereitet und kann jederzeit
+                  auf Wunsch der Praxis freigeschaltet werden.
+                </p>
+                <div>
+                  <a id="doctolib-action-btn" href="tel:+492303967575" class="btn btn--doctolib">
+                    Online-Termin über Doctolib
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Opening Hours, Contact Details & 2-Click Map -->
+            <div class="info-stack reveal">
+              <div class="info-card">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.85rem;">
+                  <h3 style="margin: 0;">Sprechzeiten</h3>
+                  <span class="status-pill" data-open-status style="background: var(--petrol-100); color: var(--petrol-900);">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <span data-open-status-text>Live-Status</span>
+                  </span>
+                </div>
+                <ul class="hours-list" id="hours-list"></ul>
+                <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0.85rem 0 0;">
+                  Sowie nach individueller Vereinbarung. Bei kurzfristigen Änderungen bitten wir um kurze telefonische Rücksprache.
+                </p>
+              </div>
+
+              <div class="info-card">
+                <h3>Standort &amp; Direktkontakt</h3>
+                <div class="exterior-preview">
+                  <img
+                    src="assets/praxis-aussenansicht-ostring37.jpg"
+                    alt="Außenansicht des Praxisgebäudes Ostring 37 in Unna (gegenüber der Bahnhof-Tiefgarage)"
+                    class="exterior-preview__img"
+                    loading="lazy"
+                  />
+                  <div class="exterior-preview__caption">
+                    <strong>Praxisgebäude Ostring 37 · Unna</strong>
+                    <span>Markantes Klinkergebäude direkt gegenüber der Tiefgarage am Bahnhof</span>
+                  </div>
+                </div>
+                <div class="contact-meta">
+                  <div class="contact-meta__row">
+                    <strong>Adresse:</strong>
+                    <span>Ostring 37, 59423 Unna</span>
+                  </div>
+                  <div class="contact-meta__row">
+                    <strong>Telefon:</strong>
+                    <a href="tel:+492303967575" style="color: var(--petrol-800); font-weight: 700;">0 23 03 / 96 75 75</a>
+                  </div>
+                  <div class="contact-meta__row">
+                    <strong>Telefax:</strong>
+                    <span>0 23 03 / 94 77 680</span>
+                  </div>
+                  <div class="contact-meta__row">
+                    <strong>E-Mail:</strong>
+                    <a href="mailto:praxis@dr-braatz.de" style="color: var(--petrol-800); font-weight: 600;">praxis@dr-braatz.de</a>
+                  </div>
+                  <div class="contact-meta__row">
+                    <strong>Parken:</strong>
+                    <span>Tiefgarage am Bahnhof, direkt gegenüber</span>
+                  </div>
+                </div>
+
+                <!-- Notdienst-Infokarte (KZVWL Westfalen-Lippe / Unna) -->
+                <div class="emergency-card">
+                  <div class="emergency-card__header">
+                    <span class="emergency-card__badge" id="emergency-date-badge">Außerhalb der Sprechzeiten</span>
+                    <strong>Zahnärztlicher Notdienst für Unna (59423)</strong>
+                  </div>
+                  <p style="margin: 0; font-size: 0.86rem; color: var(--text-secondary);" id="emergency-live-status">
+                    Prüfe tagesaktuellen Notdienst für Unna …
+                  </p>
+                  <div class="emergency-card__actions">
+                    <a
+                      href="https://www.zahnaerzte-wl.de/notdienstsuche?q=Unna"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn--warm btn--sm"
+                    >
+                      Heutigen Notdienst für Unna öffnen ↗
+                    </a>
+                    <a href="tel:+491805986700" class="btn btn--secondary btn--sm">
+                      Tel.: 01805 / 98 67 00
+                    </a>
+                  </div>
+                </div>
+
+                <!-- DSGVO 2-Klick Google Maps -->
+                <div class="map-consent" id="map-consent-container">
+                  <div class="map-consent__placeholder">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--petrol-800)" stroke-width="1.8" aria-hidden="true">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <strong style="color: var(--petrol-900);">Interaktive Karte (Datenschutz-Hinweis)</strong>
+                    <p style="margin: 0; font-size: 0.86rem; color: var(--text-secondary);">
+                      Aus Datenschutzgründen wird Google Maps erst nach Ihrem Klick geladen.
+                      Dabei werden Daten an Google übertragen.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.6rem;">
+                      <button type="button" class="btn btn--primary btn--sm" id="load-map-btn">
+                        Karte jetzt laden
+                      </button>
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=Dr.+med.+dent.+Martin+Braatz,+Ostring+37,+59423+Unna"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn--secondary btn--sm"
+                      >
+                        Route in Maps öffnen
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================================================================
+         FOOTER
+         ================================================================ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand" style="margin-bottom: 0.85rem;">
+              <img src="assets/favicon.svg" alt="" class="brand__logo" width="40" height="40" />
+              <span class="brand__text">
+                <span class="brand__name" style="color: #fff;">Dr. med. dent. Martin Braatz</span>
+                <span class="brand__role" style="color: rgba(250,247,242,0.7);">Fachzahnarzt für Oralchirurgie</span>
+              </span>
+            </div>
+            <p style="font-size: 0.9rem; max-width: 34ch; margin: 0;">
+              Ostring 37 · 59423 Unna<br />
+              Tel. <a href="tel:+492303967575" style="color: #fff;">0 23 03 / 96 75 75</a><br />
+              E-Mail: <a href="mailto:praxis@dr-braatz.de" style="color: #fff;">praxis@dr-braatz.de</a>
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Leistungen</h4>
+            <ul class="footer-links">
+              <li><a href="#leistungen" data-jump-service="oralchirurgie">Oralchirurgie</a></li>
+              <li><a href="#leistungen" data-jump-service="implantologie">Implantologie</a></li>
+              <li><a href="#leistungen" data-jump-service="parodontologie">Parodontologie</a></li>
+              <li><a href="#leistungen" data-jump-service="zahnheilkunde">Zahnheilkunde</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Praxis</h4>
+            <ul class="footer-links">
+              <li><a href="#werte">Philosophie &amp; Werte</a></li>
+              <li><a href="#angstpatienten">Für Angstpatienten</a></li>
+              <li><a href="#ueberweiser">Für Überweiser</a></li>
+              <li><a href="#ablauf">Ablauf &amp; FAQ</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-title">Rechtliches</h4>
+            <ul class="footer-links">
+              <li><button type="button" data-open-modal="impressum">Impressum</button></li>
+              <li><button type="button" data-open-modal="datenschutz">Datenschutz</button></li>
+              <li><a href="#kontakt">Anfahrt &amp; Parken</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© Praxis Dr. med. dent. Martin Braatz, Unna. Alle Rechte vorbehalten.</span>
+          <span class="footer-credit">
+            <button type="button" class="pitch-trigger-btn" data-open-modal="pitch-demo">
+              ★ Vorher / Nachher &amp; Urlaubs-Banner testen
+            </button>
+            <span>· Eine Webseite von <strong class="footer-credit__brand">ExtraDicht</strong> · 100 % DSGVO-freundlich</span>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Sticky Bottom Action Bar -->
+    <nav class="mobile-action-bar" aria-label="Schnellaktionen">
+      <a href="tel:+492303967575">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        Anrufen
+      </a>
+      <a href="#kontakt" class="is-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+          <line x1="16" y1="2" x2="16" y2="6" />
+          <line x1="8" y1="2" x2="8" y2="6" />
+          <line x1="3" y1="10" x2="21" y2="10" />
+        </svg>
+        Termin
+      </a>
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Dr.+med.+dent.+Martin+Braatz,+Ostring+37,+59423+Unna"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+        Anfahrt
+      </a>
+    </nav>
+
+    <!-- ================================================================
+         MODAL: IMPRESSUM (Aktualisiert auf DDG / MStV)
+         ================================================================ -->
+    <div class="modal" id="modal-impressum" role="dialog" aria-modal="true" aria-labelledby="title-impressum" aria-hidden="true">
+      <div class="modal__dialog">
+        <div class="modal__header">
+          <h2 id="title-impressum">Impressum</h2>
+          <button type="button" class="modal__close" data-close-modal aria-label="Schließen">✕</button>
+        </div>
+        <div class="modal__body">
+          <h3>Angaben gemäß § 5 DDG &amp; Verantwortlich i. S. d. § 18 Abs. 2 MStV</h3>
+          <p>
+            <strong>Dr. med. dent. Martin Braatz</strong><br />
+            Oralchirurgische Fachzahnarztpraxis<br />
+            Ostring 37<br />
+            59423 Unna
+          </p>
+          <p>
+            Telefon: 0 23 03 / 96 75 75<br />
+            Telefax: 0 23 03 / 94 77 680<br />
+            E-Mail: praxis@dr-braatz.de
+          </p>
+
+          <h3>Gesetzliche Berufsbezeichnung</h3>
+          <p>
+            Zahnarzt und Fachzahnarzt für Oralchirurgie (verliehen in der Bundesrepublik Deutschland).
+          </p>
+
+          <h3>Zuständige Aufsichtsbehörde</h3>
+          <p>
+            Kassenzahnärztliche Vereinigung Westfalen-Lippe (KZVWL)<br />
+            Auf der Horst 25, 48147 Münster
+          </p>
+
+          <h3>Zuständige Kammer</h3>
+          <p>
+            Zahnärztekammer Westfalen-Lippe (K.d.ö.R.)<br />
+            Auf der Horst 29/31, 48147 Münster<br />
+            Internet: <a href="https://www.zahnaerzte-wl.de" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;">www.zahnaerzte-wl.de</a>
+          </p>
+
+          <h3>Berufsrechtliche Regelungen</h3>
+          <p>
+            Es gelten das Zahnheilkundegesetz (ZHG), das Heilberufsgesetz NRW (HeilBerG),
+            die Gebührenordnung für Zahnärzte (GOZ) sowie die Berufsordnung der
+            Zahnärztekammer Westfalen-Lippe. Einzusehen über die Bundeszahnärztekammer
+            (Chausseestraße 13, 10115 Berlin,
+            <a href="https://www.bzaek.de" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;">www.bzaek.de</a>)
+            sowie die Zahnärztekammer Westfalen-Lippe.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+         MODAL: DATENSCHUTZ (DSGVO-konform, bereinigt)
+         ================================================================ -->
+    <div class="modal" id="modal-datenschutz" role="dialog" aria-modal="true" aria-labelledby="title-datenschutz" aria-hidden="true">
+      <div class="modal__dialog">
+        <div class="modal__header">
+          <h2 id="title-datenschutz">Datenschutzerklärung</h2>
+          <button type="button" class="modal__close" data-close-modal aria-label="Schließen">✕</button>
+        </div>
+        <div class="modal__body">
+          <h3>1. Verantwortlicher</h3>
+          <p>
+            Dr. med. dent. Martin Braatz, Ostring 37, 59423 Unna, Telefon: 0 23 03 / 96 75 75,
+            E-Mail: praxis@dr-braatz.de.
+          </p>
+
+          <h3>2. Datenerfassung auf dieser Webseite</h3>
+          <p>
+            Diese Webseite verzichtet auf Tracking-Cookies, Analyse-Dienste und extern geladene
+            Schriftarten (Google Fonts). Beim Aufruf der Seite speichert der Webserver technisch
+            erforderliche Server-Logfiles (Art. 6 Abs. 1 lit. f DSGVO) zur Sicherstellung eines
+            störungsfreien Betriebs.
+          </p>
+
+          <h3>3. Kontaktaufnahme per Telefon oder E-Mail</h3>
+          <p>
+            Wenn Sie uns telefonisch oder per E-Mail kontaktieren, werden Ihre Angaben
+            ausschließlich zur Bearbeitung Ihrer Anfrage und zur Terminabstimmung verarbeitet
+            (Art. 6 Abs. 1 lit. b DSGVO). Ein Kontakt- oder Terminformular wird auf dieser
+            Webseite nicht eingesetzt.
+          </p>
+
+          <h3>4. Einbindung von Google Maps (2-Klick-Lösung)</h3>
+          <p>
+            Eine Verbindung zu Google Maps wird erst hergestellt, wenn Sie aktiv auf
+            „Karte jetzt laden“ klicken (Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO).
+          </p>
+
+          <h3>5. Optionale Online-Terminbuchung (Doctolib)</h3>
+          <p>
+            Sofern die Praxis die Online-Terminbuchung über Doctolib aktiviert, erfolgt die
+            Weiterleitung auf ein externes Angebot der Doctolib GmbH erst nach Ihrem aktiven
+            Klick. Es gelten dann die dortigen Datenschutzhinweise.
+          </p>
+
+          <h3>6. Ihre Rechte &amp; Aufsichtsbehörde</h3>
+          <p>
+            Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung
+            der Verarbeitung sowie Widerspruch (Art. 15–21 DSGVO). Zuständige
+            Aufsichtsbehörde ist die Landesbeauftragte für Datenschutz und
+            Informationsfreiheit Nordrhein-Westfalen (LDI NRW), Kavalleriestraße 2–4,
+            40213 Düsseldorf.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+         MODAL: PITCH-SHOWCASE (VORHER / NACHHER SLIDER & URLAUBS-/NOTDIENST-BANNER)
+         ================================================================ -->
+    <div class="modal" id="modal-pitch-demo" role="dialog" aria-modal="true" aria-labelledby="title-pitch-demo" aria-hidden="true">
+      <div class="modal__dialog modal__dialog--wide">
+        <div class="modal__header">
+          <div>
+            <span class="eyebrow eyebrow--warm">Präsentations-Modus für Dr. Braatz</span>
+            <h2 id="title-pitch-demo" style="margin-top: 0.35rem;">Vorher / Nachher-Vergleich &amp; Praxis-Banner Steuerung</h2>
+          </div>
+          <button type="button" class="modal__close" data-close-modal aria-label="Schließen">✕</button>
+        </div>
+
+        <div class="modal__body">
+          <!-- 1. Interaktiver Vorher / Nachher Slider -->
+          <div class="pitch-section">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem; margin-bottom: 0.85rem;">
+              <div>
+                <h3 style="margin: 0;">1. Interaktiver Vorher / Nachher-Slider (Alte vs. Neue Webseite)</h3>
+                <p style="margin: 0.2rem 0 0;">Ziehen Sie den Regler nach links oder rechts, um die alte Ansicht mit dem neuen Design zu vergleichen.</p>
+              </div>
+              <span class="qm-pill">Regler verschieben ↔</span>
+            </div>
+
+            <div class="ba-slider" id="ba-slider">
+              <!-- NACHHER (Rechts / Basis) -->
+              <div class="ba-layer ba-layer--after">
+                <div class="ba-mockup ba-mockup--new">
+                  <div class="ba-mockup__top">
+                    <span class="ba-tag ba-tag--new">NEU · 2026 Redesign (ExtraDicht)</span>
+                    <span>📱 100 % Smartphone-optimiert · Barrierefrei · DSGVO-sicher</span>
+                  </div>
+                  <div class="ba-mockup__body ba-mockup__body--new">
+                    <div class="ba-new-text">
+                      <span class="eyebrow eyebrow--warm" style="font-size: 0.7rem;">Zahnarzt &amp; Oralchirurgie · Unna</span>
+                      <h4>Persönlich, vertraut und <em>ohne Hektik</em> – Ihre Zahnarztpraxis in Unna.</h4>
+                      <p>Kleines, vertrautes Praxisteam · Kurze Wartezeiten · Einfache Sprache &amp; Kontrast-Modus · 1-Klick-Anruf &amp; Notdienst-Automatik.</p>
+                      <div class="ba-new-pills">
+                        <span>✓ Live-Öffnungsstatus</span>
+                        <span>✓ Entzerrte Originalfotos</span>
+                        <span>✓ Urlaubs-Banner auf Knopfdruck</span>
+                      </div>
+                    </div>
+                    <div class="ba-new-img">
+                      <img src="assets/praxis-empfang-echt.jpg" alt="Neue Webseite Vorschau" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- VORHER (Links / Überlagerung) -->
+              <div class="ba-layer ba-layer--before" id="ba-before-layer" style="width: 50%;">
+                <div class="ba-mockup ba-mockup--old">
+                  <div class="ba-mockup__top ba-mockup__top--old">
+                    <span class="ba-tag ba-tag--old">BISHER · Klassische Ansicht (dr-braatz.de)</span>
+                    <span>⚠️ Nicht für Smartphones optimiert · Statisches Layout</span>
+                  </div>
+                  <div class="ba-mockup__body ba-mockup__body--old">
+                    <div class="ba-old-sidebar">
+                      <div class="ba-old-nav-item">Startseite</div>
+                      <div class="ba-old-nav-item">Vorwort</div>
+                      <div class="ba-old-nav-item">Oralchirurgie</div>
+                      <div class="ba-old-nav-item">Implantologie</div>
+                      <div class="ba-old-nav-item">Parodontologie</div>
+                      <div class="ba-old-nav-item">Zahnheilkunde</div>
+                      <div class="ba-old-nav-item">Kontakt / Impressum</div>
+                    </div>
+                    <div class="ba-old-content">
+                      <div class="ba-old-header-bar">Oralchirurgische Fachzahnarztpraxis Dr. med. dent. Martin Braatz</div>
+                      <p class="ba-old-text">
+                        <strong>Klassisches Desktop-Layout (ca. 2012):</strong><br />
+                        • Auf Smartphones sehr kleine Schrift (Zoomen mit zwei Fingern nötig)<br />
+                        • Verzerrtes Roh-Panorama mit Spiegelung am linken Rand<br />
+                        • Keine direkte 1-Klick-Anruffunktion oder Live-Sprechzeiten<br />
+                        • Keine Barrierefreiheit (Einfache Sprache / Kontrast) &amp; kein Urlaubs-Banner
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider Handle -->
+              <div class="ba-handle" id="ba-handle" style="left: 50%;" aria-hidden="true">
+                <div class="ba-handle__line"></div>
+                <div class="ba-handle__circle">↔</div>
+              </div>
+
+              <input
+                type="range"
+                min="5"
+                max="95"
+                value="50"
+                class="ba-range-input"
+                id="ba-range-input"
+                aria-label="Vorher-Nachher-Vergleichsregler"
+              />
+            </div>
+          </div>
+
+          <!-- 2. Benutzerfreundlicher Urlaubs- & Notdienst-Banner Konfigurator -->
+          <div class="pitch-section" style="margin-top: 2rem;">
+            <h3 style="margin: 0 0 0.35rem;">2. Praxis-Banner (Urlaub, Vertretung &amp; Notdienst) kinderleicht einstellen</h3>
+            <p style="margin: 0 0 1rem;">
+              Hier kann die Praxis mit einem Klick einen Urlaubshinweis oder den zahnärztlichen Notdienst ganz oben auf der Webseite ein- und ausschalten:
+            </p>
+
+            <div class="banner-admin-box">
+              <div class="banner-admin-presets">
+                <button type="button" class="btn btn--secondary btn--sm" data-banner-preset="vacation">
+                  🏖️ Beispiel: Praxisurlaub aktivieren
+                </button>
+                <button type="button" class="btn btn--secondary btn--sm" data-banner-preset="emergency">
+                  🦷 Beispiel: Wochenend-Notdienst anzeigen
+                </button>
+                <button type="button" class="btn btn--ghost btn--sm" data-banner-preset="off">
+                  ✕ Banner ausschalten
+                </button>
+              </div>
+
+              <div class="banner-admin-fields">
+                <div>
+                  <label for="admin-banner-title"><strong>Überschrift des Banners:</strong></label>
+                  <input type="text" id="admin-banner-title" class="admin-input" value="Praxisurlaub &amp; Vertretung" />
+                </div>
+                <div>
+                  <label for="admin-banner-msg"><strong>Hinweistext für Patienten:</strong></label>
+                  <textarea id="admin-banner-msg" class="admin-input" rows="2">Unsere Praxis befindet sich vom 23.12. bis 02.01. im Weihnachtsurlaub. Ab dem 05.01. sind wir ab 08:00 Uhr wieder für Sie da.</textarea>
+                </div>
+                <div>
+                  <label for="admin-banner-sub"><strong>Vertretung / Notdienst-Zusatz:</strong></label>
+                  <input type="text" id="admin-banner-sub" class="admin-input" value="Vertretung in dringenden Fällen übernimmt der zahnärztliche Notdienst Unna." />
+                </div>
+              </div>
+
+              <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem; margin-top: 0.85rem;">
+                <span style="font-size: 0.84rem; color: var(--text-muted);">
+                  Tipp: Änderungen werden sofort live oben auf der Webseite angezeigt.
+                </span>
+                <button type="button" class="btn btn--primary btn--sm" id="admin-banner-apply">
+                  Banner jetzt oben auf der Seite anzeigen
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Checkliste für einen stressfreien Umzug -->
+          <div class="pitch-section" style="margin-top: 2rem;">
+            <h3 style="margin: 0 0 0.35rem;">3. Sorgenfreier Umzug auf dr-braatz.de (Null Ausfallzeit)</h3>
+            <p style="margin: 0 0 0.9rem;">
+              Bei einer Übernahme der neuen Webseite bleibt für den laufenden Praxisbetrieb alles verlässlich bestehen:
+            </p>
+            <div class="migration-guarantee-grid">
+              <div class="migration-guarantee-item">
+                <strong>✓ E-Mail &amp; Domain bleiben unangetastet</strong>
+                <span><code>praxis@dr-braatz.de</code> und <code>www.dr-braatz.de</code> funktionieren ohne Unterbrechung weiter.</span>
+              </div>
+              <div class="migration-guarantee-item">
+                <strong>✓ 100 % DSGVO- &amp; DDG-konform (Stand 2026)</strong>
+                <span>Keine Abmahnrisiken durch Google Fonts, Tracking-Cookies oder ungeschützte Karten.</span>
+              </div>
+              <div class="migration-guarantee-item">
+                <strong>✓ Keine laufenden Agentur-Abokosten</strong>
+                <span>Einmalige Übergabe des kompletten, schnellen Quellcodes – volle Unabhängigkeit für die Praxis.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================================================================
+         LIGHTBOX DIALOG FÜR ECHTE PRAXISBILDER (Klick zum Vergrößern)
+         ================================================================ -->
+    <dialog class="lb-dialog" id="praxis-lightbox" aria-label="Praxis-Bildansicht">
+      <div class="lb-dialog__inner">
+        <button type="button" class="lb-dialog__close" id="lb-close" aria-label="Vollbild schließen">✕</button>
+        <button type="button" class="lb-dialog__nav lb-dialog__nav--prev" id="lb-prev" aria-label="Vorheriges Praxisfoto">←</button>
+        <figure class="lb-dialog__figure">
+          <img src="" alt="" class="lb-dialog__img" id="lb-img" />
+          <figcaption class="lb-dialog__caption" id="lb-caption"></figcaption>
+        </figure>
+        <button type="button" class="lb-dialog__nav lb-dialog__nav--next" id="lb-next" aria-label="Nächstes Praxisfoto">→</button>
+      </div>
+    </dialog>
+
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

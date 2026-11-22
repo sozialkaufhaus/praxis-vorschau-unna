@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 320 320" fill="none">
+  <!-- Subtle botanical autumn linden leaf (Herbstlinden) seamless wallpaper pattern -->
+  <g opacity="0.22" stroke="#B68028" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Branch 1 top-left -->
+    <path d="M18 110 C55 82, 92 66, 138 40"/>
+    <!-- Heart-shaped Linden Leaf 1 -->
+    <path d="M68 78 C52 54, 62 28, 86 24 C104 21, 114 38, 108 58 C103 74, 84 82, 68 78 Z" fill="#E5B95C" fill-opacity="0.22"/>
+    <path d="M68 78 C78 60, 86 44, 92 28"/>
+    <path d="M77 62 L66 54 M84 48 L98 44 M80 56 L94 56"/>
+    <!-- Heart-shaped Linden Leaf 2 -->
+    <path d="M114 54 C126 30, 152 24, 166 42 C178 58, 164 80, 142 82 C126 83, 114 70, 114 54 Z" fill="#D79E3D" fill-opacity="0.16"/>
+    <path d="M114 54 C132 52, 148 48, 161 44"/>
+    <path d="M132 52 L140 38 M142 50 L150 64"/>
+    <!-- Linden Bract & Fruits -->
+    <path d="M88 68 C84 86, 86 102, 96 114"/>
+    <path d="M87 82 C74 88, 68 102, 74 114 C82 112, 89 102, 90 88" fill="#C9A04A" fill-opacity="0.18"/>
+    <circle cx="96" cy="116" r="3" fill="#B68028" fill-opacity="0.35"/>
+    <circle cx="104" cy="111" r="2.6" fill="#B68028" fill-opacity="0.35"/>
+
+    <!-- Branch 2 bottom-right -->
+    <path d="M182 280 C216 248, 250 226, 298 192"/>
+    <!-- Heart-shaped Linden Leaf 3 -->
+    <path d="M224 242 C202 222, 206 192, 228 184 C248 177, 264 196, 260 218 C256 236, 238 244, 224 242 Z" fill="#E5B95C" fill-opacity="0.22"/>
+    <path d="M224 242 C232 224, 238 206, 238 188"/>
+    <path d="M231 224 L218 214 M236 208 L252 204 M233 218 L248 220"/>
+    <!-- Heart-shaped Linden Leaf 4 -->
+    <path d="M262 214 C274 190, 298 186, 312 204 C322 218, 310 242, 288 242 C272 242, 260 228, 262 214 Z" fill="#9BB39E" fill-opacity="0.18"/>
+    <path d="M262 214 C278 212, 294 208, 308 204"/>
+    <!-- Linden Bract 2 -->
+    <path d="M242 230 C240 248, 246 264, 258 274"/>
+    <circle cx="258" cy="276" r="3" fill="#B68028" fill-opacity="0.32"/>
+    <circle cx="266" cy="270" r="2.5" fill="#B68028" fill-opacity="0.32"/>
+
+    <!-- Delicate floating autumn leaf center-left -->
+    <path d="M52 232 C38 212, 48 188, 68 186 C86 184, 94 202, 86 220 C80 234, 62 238, 52 232 Z" fill="#C98A4B" fill-opacity="0.16"/>
+    <path d="M52 232 C60 216, 66 202, 70 189"/>
+    <path d="M60 218 L50 210 M65 206 L78 204"/>
+
+    <!-- Delicate floating leaf top-right -->
+    <path d="M242 98 C230 80, 238 58, 258 56 C274 54, 282 70, 276 88 C270 100, 252 104, 242 98 Z" fill="#8EA894" fill-opacity="0.16"/>
+    <path d="M242 98 C250 84, 256 70, 260 59"/>
+  </g>
+</svg>
